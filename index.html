@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" >
+        <link rel="stylesheet" href="styles.css">
+        <title id="title">Learn with Gina</title>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="pic (2).jpg">
+            <h1>HTML/CSS QUIZ</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#student-info" accesskey="s">INFO</a>
+                    </li>
+                    <li>
+                        <a href="#html-question" accesskey="b">HTML</a>
+                    </li>
+                    <li>
+                        <a href="#css-question" accesskey="d">CSS</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+            <main>
+                <form method="post" action="https://Georgy22.github.io/practice-project/accessibility-quiz">
+                    <section role="region" aria-labelledby="student-info">
+                        <h2 id="student-info">STUDENT INFO</h2>
+                        <div class="info">
+                            <label for="student-name">YOUR NAME:</label>
+                                <input id="student-name" type="text" name="student-name">
+                        </div>
+                        <div class="info">
+                            <label for="student-email">YOUR EMAIL:</label>
+                                <input id="student-email" type="text" name="student-email">
+                        </div>
+                        <div class="info">
+                            <label for="birth-date">D.O.B:<span class="sr-only">(Date of birth)</span></label>
+                                <input id="birth-date" type="date" name="Date of birth">                         
+                        </div>
+                    </section>
+                    <section role="region" aria-labelledby="html-questions">
+                        <h2 id="html-questions">HTML</h2>
+                        <div class="question-block">
+                            <p>1</p>
+                            <fieldset class="question" name="html-question-one">
+                                <legend>Don't be discouraged, what you're made of is yet to be seen</legend>
+                                <ul class="answers-list">
+                                    <li>
+                                        <label for="q1-a1">
+                                            <input id="q1-a1" type="radio" value="true" name="q1">
+                                            True
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label for="q1-a2">
+                                            <input id="q1-a2" name="q1" type="radio" value="false">
+                                            False
+                                        </label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </div>
+                        <div class="question-block">
+                            <p>2</p>
+                            <fieldset class="question" name="html-question-two">
+                                <legend>
+                                    Success comes to those who thrive
+                                </legend>
+                                <ul class="answers-list">
+                                    <li>
+                                        <label for="q2-a1"><input id="q2-a1" type="radio" name="q2" value="true">True</label>
+                                    </li>
+                                    <li>
+                                        <label for="q2-a1">
+                                            <input id="q2-a1" type="radio" name="q2" value="false">
+                                            False
+                                        </label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </div>
+                    </section>
+                    <section role="region" aria-labelledby="css-questions">
+                        <h2 id="css-questions">CSS</h2>
+                        <div class="formrow">
+                            <div class="question-block">
+                                <label for="client">Are you interested in frontend web development?</label>
+                            </div>
+                            <div class="answer">
+                                <select name="client" id="client" required>
+                                    <option value="">Select an option</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                            <div class="question-block">
+                                <label for="css-questions">Do you have any question?</label>
+                            </div>
+                            <div class="answer">
+                                <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="You love frontend web development because..."></textarea>
+                            </div>
+                        </div>
+                    </section>
+                    <button type="submit">Submit Reply</button>
+                </form>
+            </main>
+            <footer>
+                <address>
+                    <a href="http://github.com/Georgy22">Freecodecamp lessons</a> <br/>
+                    Lagos,Nigeria<br/>
+                </address>
+            </footer>
+    </body>
+</html>
